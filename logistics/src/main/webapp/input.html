@@ -1,0 +1,96 @@
+<!DOCTYPE html>  
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jquery.1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+	<title>测试按钮</title>
+</head>
+<body>
+
+<div data-role="page" id="page">
+	<div data-role="header" style="background-color:red;">
+		<h1 >第 1 页</h1>
+	</div>
+	<div data-role="content">
+		<input type="text"/>
+		<label for="number">number</label>
+		<input name="number" pattern="[0-9]*" id="number" type="number"/>
+		
+		<input name="hide" placeholder="请输入您要搜索的内容"/>
+		
+		<div data-role="fieldcontain">
+			<label for="name">用户名</label>
+			<input type="text" name="name" id="name" placeholder="请输入您的用户名"/>
+			<label for="password">密码</label>
+			<input type="password" name="password" id="password" />
+			<input type="button" name="submit" data-inline="true" value="提交"/>
+			<input type="reset" name="reset" data-inline="true" value="重置"/>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="foo">
+				<select name="foo" id="foo">
+					<option value="a">A</option>
+					<option value="b">B</option>
+					<option value="c">C</option>
+				</select>
+			</label>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="textarea">textarea</label>
+			<textarea id="textarea"></textarea>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="search">search</label>
+			<input type="search" id="search"/>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="range">range</label>
+			<input type="range" id="range" value="25" min="0" max="100"/>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="range1">range</label>
+			<input type="range" id="range1" data-highlight="true" value="25" min="0" max="100"/>
+			
+			
+		</div>
+		<input type="range" id="range2" data-highlight="true" data-mini="true" value="25" min="0" max="100"/>
+		
+		<label for="switch">switch</label>
+		<select id="switch" data-role="slider">
+			<option value="off">关</option>
+			<option value="on">开</option>
+		</select>
+		
+		<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+		    <legend>Radio buttons, mini, horizontal controlgroup:</legend>
+		        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
+		        <label for="radio-choice-c">List</label>
+		        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
+		        <label for="radio-choice-d">Grid</label>
+		</fieldset>
+		
+		<div data-role="fieldcontain">
+			<label for="foo">
+				<select name="foo" id="foo" data-native-menu="false">
+					<option value="a">A</option>
+					<option value="b">B</option>
+					<option value="c">C</option>
+				</select>
+			</label>
+		</div>
+	</div>
+	<div data-role="footer">
+		<h4>底部</h4>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
